@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+.paralax{
+    width: 100%;
+    min-height: 200vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container1{
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-image: url(images/background.jpg);
+}
+.container2{
+    background-image: linear-gradient(rgb(0,0,0,.5), rgb(0,0,0,.5)), url(images/background2.jpg);
+    min-height: 60vh;
+    display: column;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    height: auto;
+    padding: 20px 10%;
+    background: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    font-size: 19px;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background: black;
+    padding: 10px 15px;
+    border-radius: 40px;
+    font-weight: bolder;
+}
+nav ul li a:hover{
+    background: rgb(105, 104, 104);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: "Merienda", kursif; 
+}
+nav button{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    font-family: "Merienda", kursif; 
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+nav button:hover{
+    background: rgb(73, 73, 73);
+}
+.intro{
+    width: 100%;
+    padding: 50px 15%;
+}
+.wraper{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    color: white;
+}
+.desc h1{
+    font-size: 6em;
+    margin-bottom: 30px;
+}
+.desc h1 span{
+    color: rgb(255, 153, 0);
+    font-family: "Merienda", kursif; 
+}
+.desc p{
+    font-size: 2em;
+    z-index: 200;
+}
+.animasi{
+    animation: duing 1.5s infinite;
+    position: relative;
+}
+@keyframes duing{
+    0%{
+        bottom: 0;
+    }40%{
+        bottom: -40px;
+    }100%{
+        bottom: 0;
+    }
+}
+.desc button{
+    padding: 8px 40px;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, rgb(146, 121, 76), rgb(118, 52, 118));
+    border-radius: 40px;
+    font-size: 20px;
+    color: white;
+    font-family: "Merienda", kursif;
+    position: relative;
+    left: 23%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.desc button:hover{
+    box-shadow: 2px 2px 20px 2px pink;
+}
+.desc span{
+    background: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0;
+}
+.desc span:first-child{
+    animation: text1 2.5s linear infinite alternate; 
+}
+.desc span:last-child{
+    animation: text2 2.5s linear infinite alternate
+}
+@keyframes text2{
+    0%{
+        background-size: 0%;
+    }40%{
+        background-size: 0;
+    }100%{
+        background-size: 100%;
+    }
+}
+@keyframes text1{
+    0%{
+        background-size: 0%;
+    }40%{
+        background-size: 100%;
+    }100%{
+        background-size: 100%;
+    }
+}
+.desc button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.desc button img{
+    margin-left: 10px;
+
+}
+.desc{
+    position: relative;
+    bottom: 50px;
+}
+.wraper-container2{
+    width: 100%;
+    height: auto;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 5em;
+    color: white;
+    font-family: "Merienda", kursif;
+}
+.wraper-container2 i{
+    position: relative;
+    top: 250px;
+    color: white;
+    font-size: 2em;
+}
+.about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    position: relative;
+    bottom: 120px;
+}
+.wraper-about{
+    padding: 20px;
+    margin: 20px;
+    background: black;
+    width: 80%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 2px ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.kotak{
+    width: 30%;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+.kotak img{
+    width: 30%;
+    margin-bottom: 20px;
+    margin: auto;
+}
+.container3{
+    background-image: url(images/background.jpg);
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+.wraper-planet{
+    width: 100%;
+    max-width: 80%;
+    display: column;
+    justify-content: center;
+}
+.saturn{
+    background: white;
+    width: 100%;
+    padding: 20px 10px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+.gambar-saturn{
+    position: relative;
+    left: 0;
+    margin-left: 10px;
+}
+.info-saturn{
+    position: relative;
+    right: 20%;
+    width: 30%;
+}
+.info-saturn h1{
+    font-size: 3em;
+    font-family: "Merienda", kursif;
+}
+.info-saturn p{
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.uranus{
+    background: white;
+    width: 100%;
+    padding: 20px 10px;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+.gambar-uranus{
+    position: relative;
+    right: 10px;
+    float: right;
+    text-align: end;
+}
+.info-uranus{
+    position: relative;
+    left: 20%;
+    width: 30%;
+    float: left;
+    text-align: end;
+    margin-right: 20px;
+}
+.info-uranus h1{
+    font-size: 3em;
+    font-family: "Merienda", kursif;
+}
+.info-uranus p{
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mars{
+    background: white;
+    width: 100%;
+    padding: 20px 10px;
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+.gambar-mars{
+    position: relative;
+    left: 0;
+    margin-left: 10px;
+}
+.info-mars{
+    position: relative;
+    right: 20%;
+    width: 30%;
+}
+.info-mars h1{
+    font-size: 3em;
+    font-family: "Merienda", kursif;
+}
+.info-mars p{
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    width: 100%;
+    height: auto;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+    background: black;
+    z-index: 9999;
+}
+.wraper-footer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: column;
+    justify-content: center;
+    align-items: center;
+}
+.gambar-footer{
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/logo3.png);
+    border: 8px solid white;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 2px 2px 20px 2px pink;
+}
+.wraper-footer p{
+    color: white;
+    font-size: 1.5em;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.medsos i{
+    color: white;
+    font-size: 3em;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.medsos i:hover{
+    box-shadow: 2px 2px 20px 2px pink;
+}
