@@ -3,15 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
-}
 .paralax{
     width: 100%;
     min-height: 200vh;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .container1{
     flex-wrap: wrap;
@@ -38,6 +37,9 @@ nav{
     top: 0;
     right: 0;
     z-index: 99999;
+}
+#list{
+    display: none;
 }
 nav ul{
     display: flex;
@@ -204,6 +206,7 @@ nav button:hover{
 .wraper-about{
     padding: 20px;
     margin: 20px;
+    margin-top: 130px;
     background: black;
     width: 80%;
     max-width: 100%;
@@ -226,6 +229,7 @@ nav button:hover{
     margin: auto;
 }
 .container3{
+    height: 100vh;
     background-image: url(images/background.jpg);
     flex-wrap: wrap;
     display: flex;
@@ -283,13 +287,17 @@ nav button:hover{
     right: 10px;
     float: right;
     text-align: end;
+    display: block;
+}
+.gambar-uranus2{
+    display: none;
 }
 .info-uranus{
     position: relative;
     left: 20%;
     width: 30%;
     float: left;
-    text-align: end;
+    text-align: right;
     margin-right: 20px;
 }
 .info-uranus h1{
@@ -310,6 +318,9 @@ nav button:hover{
     display: flex;
     justify-content: center;
     border-radius: 30px;
+}
+.kotak img{
+    width: 30%;
 }
 .gambar-mars{
     position: relative;
@@ -375,4 +386,260 @@ footer{
 }
 .medsos i:hover{
     box-shadow: 2px 2px 20px 2px pink;
+}
+@media only screen and (max-width: 1500px){
+    nav button{
+        display: none;
+        flex-wrap: wrap;
+    }
+    nav h2{
+        font-size: 18px;
+    }
+    nav img{
+        width: 70px;
+    }
+    nav{
+        padding: 10px ;
+        width: 100%;
+    }
+    #list{
+        display: block;
+        font-size: 40px;
+    }
+    .kotak img{
+        width: 30%;
+    }
+    nav ul{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(.1);
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        transition: transform .7s, top .7s;
+        visibility: hidden;
+    }
+    .show-ul{
+        transform: translate(-50%, -50%) scale(1);
+        top: 80%;
+        visibility: visible;
+    }
+    /* .hide-ul{
+        transform: translate(-50%, -50%) scale(.1);
+        top: 0;
+    } */
+    nav ul li a{
+        padding: 0;
+        background: none;
+        font-size: 15px;
+    }
+    .wraper{
+        display: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .desc{
+        position: absolute;
+        bottom: 100px;
+        z-index: 999;
+    }
+    .desc h1{
+        font-size: 3em;
+        text-align: center;
+        color: black;
+    }
+    .animasi{
+        width: 400px;
+    }
+    .wraper-container2 h1{
+        font-size: 1em;
+    }
+    .about{
+        padding: none;
+    }
+    .wraper-about{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        gap: 40px;
+    }
+    .kotak{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background: black;
+    }
+    .wraper-planet{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    .saturn{
+        width: 90%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        border-radius: 0;
+    }
+    .gambar-saturn{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        margin: 0;
+        /* margin-top: 20px; */
+        width: 500px;
+    }
+    .info-saturn{
+        width: 100%;
+        left: 0;
+        padding: 20px;
+        display: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .info-saturn h1{
+        font-size: 2em;
+    }
+    .info-saturn p {
+        font-size: 15px;
+    }
+    .uranus{
+        width: 90%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        border-radius: 0;
+    }
+    .gambar-uranus{
+        display: none;
+    }
+    .gambar-uranus2{
+        display: block;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        margin: 0;
+        width: 500px;
+    }
+    .info-uranus{
+        width: 100%;
+        left: 0;
+        padding: 20px;
+        display: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .info-uranus h1{
+        font-size: 2em;
+    }
+    .info-uranus p {
+        font-size: 15px;
+    }
+    .mars{
+        width: 90%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        border-radius: 0;
+    }
+    .gambar-mars{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        margin: 0;
+        width: 500px;
+    }
+    .container3{
+        height: 80vh;
+    }
+    .info-mars{
+        width: 100%;
+        left: 0;
+        padding: 20px;
+        display: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .info-mars h1{
+        font-size: 2em;
+    }
+    .info-mars p {
+        font-size: 15px;
+    }
+    .gambar-footer{
+        width: 100px;
+        height: 100px;
+    }
+    .medsos i{
+        font-size: 25px;
+        margin: 5px;
+    }
+    .medsos{
+        gap: 5px;
+    }
+    footer{
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 500px){
+    .animasi {
+        width: 400px;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    .saturn{
+        top: 30px;
+    }
+    .uranus{
+        top: 60px;
+    }
+    .mars{
+        top: 90px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .saturn{
+        top: 40px;
+    }
+    .gambar-saturn, .gambar-uranus2, .gambar-mars{
+        width: 495px;
+    }
+    .uranus{
+        top: 80px;
+    }
+    .mars{
+        top: 120px;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .kotak img{
+        width: 200px;
+    }
 }

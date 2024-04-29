@@ -15,18 +15,19 @@
 </head>
 
 <body>
-    <div class="paralax container1">
+    <div class="paralax container1" id="home">
         <nav>
             <div class="logo">
                 <img src="images/logo3.png" alt="" width="80px">
                 <h2>DiyoSpace</h2>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Planet</a></li>
-                <li><a href="#about">About</a></li>
+            <ul id="showLi" >
+                <li><a href="#home">Home</a></li>
+                <li><a  href="#planet">Planet</a></li>
+                <li><a  href="#about">About</a></li>
             </ul>
             <button>Lets Go💫</button>
+            <i class='bx bx-list-ul' id="list"></i>
         </nav>
 
         <!-- ------------------- SESI KONTEN ------------------------------- -->
@@ -40,32 +41,31 @@
             </div>
         </div>
     </div>
-    <div class="paralax container2">
+    <div id="about" class="paralax container2">
         <div class="wraper-container2">
             <h1>ABOUT</h1>
-            <a href="#about"><i class='bx bxs-chevron-down'></i></a>
         </div>
         <div class="about">
             <div class="wraper-about">
                 <div class="kotak">
-                    <img src="images/1.png" alt="" width="58%">
+                    <img src="images/1.png" alt="">
                     <p>Skill. The skills that an astronaut must have are survival skills and remaining calm when faced
                         with difficult situations.</p>
                 </div>
                 <div class="kotak">
-                    <img src="images/2.png" alt="" width="58%">
+                    <img src="images/2.png" alt="">
                     <p>Experience. My experience from exploring space for more than 10 years is that if you want to
                         become an astronaut you have to be very calm.</p>
                 </div>
                 <div class="kotak">
-                    <img src="images/3.png" alt="" width="58%">
+                    <img src="images/3.png" alt="">
                     <p>mindset. You must have a very positive mindset and must not be pessimistic, for example thinking
                         about accidents or whatever.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="paralax container3">
+    <div id="planet" class="paralax container3">
         <div class="wraper-planet">
             <div class="saturn">
                 <div class="gambar-saturn"><img src="images/saturn.jpg" alt="" width="70%"></div>
@@ -80,6 +80,7 @@
                 </div>
             </div>
             <div class="uranus">
+                <div class="gambar-uranus2"><img src="images/uranus.jpg" alt="" width="70%"></div>
                 <div class="info-uranus">
                     <h1>URANUS</h1>
                     <p>Uranus is the seventh planet from the Sun, and is the third largest planet in our solar system
@@ -111,8 +112,8 @@
             <p>Go To Space <img src="images/arrow-white.png" alt=""></p>
             <div class="medsos">
                 <i class='bx bxl-whatsapp'></i>
-                <i class='bx bxl-facebook-circle' ></i>
-                <i class='bx bxl-instagram' ></i>
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-instagram'></i>
             </div>
         </div>
     </footer>
