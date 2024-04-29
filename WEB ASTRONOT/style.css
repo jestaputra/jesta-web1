@@ -93,8 +93,8 @@ nav button:hover{
     color: white;
 }
 .desc h1{
-    font-size: 6em;
-    margin-bottom: 30px;
+    font-size: 4em;
+    margin-bottom: 20px;
 }
 .desc h1 span{
     color: rgb(255, 153, 0);
@@ -229,13 +229,16 @@ nav button:hover{
     margin: auto;
 }
 .container3{
-    height: 100vh;
+    min-height: 180vh;
     background-image: url(images/background.jpg);
     flex-wrap: wrap;
     display: flex;
     width: 100%;
     justify-content: center;
     margin: auto;
+}
+.wraper-planet img{
+    width: 500px;
 }
 .wraper-planet{
     width: 100%;
@@ -248,7 +251,7 @@ nav button:hover{
     width: 100%;
     padding: 20px 10px;
     position: relative;
-    top: 100px;
+    top: 50px;
     display: flex;
     justify-content: center;
     border-radius: 30px;
@@ -260,8 +263,8 @@ nav button:hover{
 }
 .info-saturn{
     position: relative;
-    right: 20%;
-    width: 30%;
+    right: -10px;
+    width: 100%;
 }
 .info-saturn h1{
     font-size: 3em;
@@ -277,7 +280,7 @@ nav button:hover{
     width: 100%;
     padding: 20px 10px;
     position: relative;
-    top: 150px;
+    top: 100px;
     display: flex;
     justify-content: space-between;
     border-radius: 30px;
@@ -294,8 +297,8 @@ nav button:hover{
 }
 .info-uranus{
     position: relative;
-    left: 20%;
-    width: 30%;
+    left: -10px;
+    width: 100%;
     float: left;
     text-align: right;
     margin-right: 20px;
@@ -314,7 +317,7 @@ nav button:hover{
     width: 100%;
     padding: 20px 10px;
     position: relative;
-    top: 200px;
+    top: 150px;
     display: flex;
     justify-content: center;
     border-radius: 30px;
@@ -324,13 +327,13 @@ nav button:hover{
 }
 .gambar-mars{
     position: relative;
-    left: 0;
+    left: -10px;
     margin-left: 10px;
 }
 .info-mars{
     position: relative;
-    right: 20%;
-    width: 30%;
+    right: 0;
+    width: 100%;
 }
 .info-mars h1{
     font-size: 3em;
@@ -391,6 +394,9 @@ footer{
     nav button{
         display: none;
         flex-wrap: wrap;
+    }
+    .wraper-planet img{
+        width: 71%;
     }
     nav h2{
         font-size: 18px;
@@ -566,16 +572,16 @@ footer{
         border-radius: 0;
     }
     .gambar-mars{
-        margin: auto;
+        /* margin: auto; */
         display: flex;
         align-items: center;
         justify-content: center;
-        right: 0;
         margin: 0;
+        left: 0;
         width: 500px;
     }
     .container3{
-        height: 80vh;
+        min-height: 180vh;
     }
     .info-mars{
         width: 100%;
@@ -623,6 +629,9 @@ footer{
     .mars{
         top: 90px;
     }
+    .container3{
+        height: 200vh;
+    }
 }
 @media only screen and (max-width: 400px){
     .saturn{
@@ -637,9 +646,34 @@ footer{
     .mars{
         top: 120px;
     }
+    .container3{
+        height: 210vh;
+    }
 }
 @media only screen and (min-width: 1000px){
     .kotak img{
         width: 200px;
+    }
+}
+
+@media only screen and (max-width: 361px){
+    .container3{
+        min-height: 220vh;
+    }
+    .wraper-planet img{
+        width: 322px;
+    }
+    .mars, .saturn, .uranus{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 1000px) and (min-width: 700px){
+    .kotak img{
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 640px) and (min-width: 500px){
+    .container3{
+        min-height: 200vh;
     }
 }
